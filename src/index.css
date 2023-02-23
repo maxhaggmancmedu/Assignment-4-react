@@ -1,0 +1,78 @@
+:root {
+  background-color: #242424;
+  color-scheme: light dark;
+  color: #FFFFFF;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  place-items: center;
+}
+
+.App {
+  background-color: #181A20;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 430px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 75px 24px 40px 24px;
+}
+
+.top-characters {
+  font-size: 1.7rem;
+  left: -8.6rem;
+  position: relative;
+}
+
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.character-component {
+  gap: 1.6rem;
+  display: flex;
+  color: #FFFFFF;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1.6rem;
+}
+
+.character {
+  font-size: 1.3rem;
+  height: 258px;
+  width: 181px;
+}
+
+.character-image {
+  border: 1px solid #1F222A;
+  border-radius: 2rem;
+  height: 258px;
+  width: 181px;
+}
+
+h3 {
+  padding: 0 1rem;
+  position: relative;
+  text-align: center;
+  top: -38px;
+}
+
+
