@@ -75,4 +75,11 @@ h3 {
   top: -38px;
 }
 
+.credit {
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    padding: 3rem;
+}
+
 

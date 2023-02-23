@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import CharacterComponent from './Characters'
 import Nav from './Nav'
+import Footer from './Footer'
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -26,6 +27,7 @@ function App() {
           return <CharacterComponent key={[0]._id} {...character}></CharacterComponent>
         })}
       </div>
+      <Footer />
     </div>
   )
 }
