@@ -7,7 +7,7 @@ export default (query) => {
       body: JSON.stringify({
         query,
         variables: {
-          // now: new Date().toISOString(),
+          
         },
       })
     })

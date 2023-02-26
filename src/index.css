@@ -35,6 +35,41 @@ body {
   margin: 75px 24px 40px 24px;
 }
 
+.pagination {
+  align-items: center;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.pagination > button {
+  background-color: #181A20;
+  color: #FFFFFF;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  padding: 16px 0;
+  width: 155px;
+}
+
+.pagination > button:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.page-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 4px;
+  justify-content: space-evenly;
+}
+
+.page-number {
+  color: #00ffff;
+} 
+
 .top-characters {
   font-size: 1.7rem;
   left: -8.6rem;

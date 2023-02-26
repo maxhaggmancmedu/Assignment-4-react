@@ -5,11 +5,12 @@ import fetchQL from './fetchQL';
 
 function App() {
   const [characters, setCharacters] = useState([]);
+  const [page, setPage] = useState(1);
   
   useEffect(() => {
     fetchQL(`
     {
-      characters(page: 43) {
+      characters(page: ${page}) {
         items {
           _id
           name
@@ -22,16 +23,22 @@ function App() {
       return res.json()
     })
     .then((data) => {
-      console.log(data)
+      
       setCharacters(data.data.characters.items)
     })
-  }, [])
-
-  console.log(characters)
+  }, [page])
 
   return (
     <div className='App'>
       <Nav />
+      <div className="pagination">
+            <button onClick={() => setPage(Math.max(1, page - 1))}>Prev</button>
+            <div className="page-container">
+                <p>Page</p>
+                <p className='page-number'>{page}</p>
+            </div>
+            <button onClick={() => setPage(page + 1)}>Next</button>
+        </div>
       <div className='character-component'>
         {characters.map((character) => {
           return <CharacterComponent key={character._id} {...character}></CharacterComponent>
